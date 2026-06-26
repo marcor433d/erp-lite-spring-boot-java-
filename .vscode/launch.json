@@ -1,0 +1,14 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-ErpLiteApplication<erp-lite>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.cursospring4.erp_lite.ErpLiteApplication",
+            "projectName": "erp-lite",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}
