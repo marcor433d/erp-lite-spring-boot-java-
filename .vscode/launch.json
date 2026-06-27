@@ -9,6 +9,16 @@
             "projectName": "erp-lite",
             "args": "",
             "envFile": "${workspaceFolder}/.env"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-ErpLiteApplication<erp-api>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.cursospring4.erp_lite.ErpLiteApplication",
+            "projectName": "erp-api",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
         }
     ]
 }
