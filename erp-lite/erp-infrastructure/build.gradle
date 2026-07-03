@@ -1,4 +1,23 @@
+plugins{
+	id "java-library"
+}
+
 dependencies {
-	implementation project(':erp-domain')
-	implementation project(':erp-application')
+	api project(':erp-domain')
+	api project(':erp-application')
+	api project(':erp-common')
+
+	//SQL
+	api 'org.postgresql:postgresql:42.7.11'
+	api 'org.springframework.boot:spring-boot-starter-data-jpa'
+
+	//MongoDB
+	api 'org.springframework.boot:spring-boot-starter-data-mongodb'
+
+	//Redis
+	api 'org.springframework.boot:spring-boot-starter-data-redis'
+	api 'org.springframework.boot:spring-boot-starter-cache'
+
+
+
 }
