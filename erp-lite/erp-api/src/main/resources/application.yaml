@@ -24,9 +24,10 @@ spring:
         format_sql: ${HIBERNATE_FORMAT_SQL:true}
         use_sql_comments: ${HIBERNATE_SHOW_COMMENTS:true}
 
-  # MongoDB - Spring Boot 4.x
+  # MongoDB
   data:
     mongodb:
+      uri: mongodb://debuggeandoideas:secret@localhost:27017/erp_catalog_db?authSource=admin
       auto-index-creation: true
 
     # Redis
@@ -40,9 +41,6 @@ spring:
           max-active: 8
           max-idle: 8
           min-idle: 0
-
-  mongodb:
-    uri: mongodb://debuggeandoideas:secret@localhost:27017/erp_catalog_db?authSource=admin
 
   web:
     error:
